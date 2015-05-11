@@ -1,0 +1,35 @@
+{
+  "name": "tilestrata-datadog",
+  "version": "0.0.0",
+  "description": "A TileStrata plugin for sending timing metrics to Datadog",
+  "author": "Brian Reavis <brian@naturalatlas.com>",
+  "license": "Apache License, v2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naturalatlas/tilestrata-datadog.git"
+  },
+  "keywords": [
+    "tilestrata",
+    "tilestrata-plugin",
+    "tilestrata-hook",
+    "datadog"
+  ],
+  "bugs": {
+    "url": "https://github.com/naturalatlas/tilestrata-datadog/issues"
+  },
+  "homepage": "https://github.com/naturalatlas/tilestrata-datadog",
+  "dependencies": {
+    "node-dogstatsd": "0.0.6"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1"
+  },
+  "peerDependencies": {
+    "tilestrata": ">=1.0.2"
+  }
+}
