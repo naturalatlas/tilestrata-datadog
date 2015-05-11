@@ -1,6 +1,6 @@
 {
   "name": "tilestrata-datadog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A TileStrata plugin for sending timing metrics to Datadog",
   "author": "Brian Reavis <brian@naturalatlas.com>",
   "license": "Apache License, v2.0",

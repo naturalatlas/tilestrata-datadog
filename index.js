@@ -1,17 +1,24 @@
 var StatsD = require('node-dogstatsd').StatsD;
 
+var datadog;
+function instance() {
+	if (!datadog) {
+		datadog = new StatsD();
+		if (datadog.socket) {
+			datadog.socket.on('error', function(exception) {
+				return console.error('Error event in socket.send() to datadog: ' + exception);
+			});
+		}
+	}
+	return datadog;
+}
+
 module.exports = function(options) {
 	options = options || {};
 
-	var datadog = new StatsD();
+	var datadog = instance();
 	var datadog_ns = options.ns || 'tilestrata.';
 	if (!/\.$/.test(datadog_ns)) datadog_ns += '.';
-
-	if (datadog.socket) {
-		datadog.socket.on('error', function(exception) {
-			return console.error('Error event in socket.send() to datadog: ' + exception);
-		});
-	}
 
 	return [
 		{
