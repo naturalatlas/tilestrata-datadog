@@ -1,6 +1,6 @@
 # tilestrata-datadog
 [![NPM version](http://img.shields.io/npm/v/tilestrata-datadog.svg?style=flat)](https://www.npmjs.org/package/tilestrata-datadog)
-[![Build Status](http://img.shields.io/travis/naturalatlas/tilestrata-datadog/master.svg?style=flat)](https://travis-ci.org/naturalatlas/tilestrata-datadog)
+[![Build Status](https://travis-ci.org/naturalatlas/tilestrata-datadog.svg)](https://travis-ci.org/naturalatlas/tilestrata-datadog)
 [![Coverage Status](http://img.shields.io/coveralls/naturalatlas/tilestrata-datadog/master.svg?style=flat)](https://coveralls.io/r/naturalatlas/tilestrata-datadog)
 
 A [TileStrata](https://github.com/naturalatlas/tilestrata) plugin for sending timing metrics to [Datadog](https://www.datadoghq.com/).

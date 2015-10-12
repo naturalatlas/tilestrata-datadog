@@ -16,6 +16,8 @@
     "tilestrata",
     "tilestrata-plugin",
     "tilestrata-hook",
+    "tilestrata-reshook",
+    "tilestrata-reqhook",
     "datadog"
   ],
   "bugs": {
@@ -26,8 +28,8 @@
     "node-dogstatsd": "0.0.6"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "mocha": "^2.0.1"
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
   },
   "peerDependencies": {
     "tilestrata": ">=1.0.2"

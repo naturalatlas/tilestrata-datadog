@@ -22,12 +22,14 @@ module.exports = function(options) {
 
 	return [
 		{
+			name: 'datadog',
 			reqhook: function(server, tile, req, res, callback) {
 				tile._timeStart = Date.now();
 				callback();
 			}
 		},
 		{
+			name: 'datadog',
 			reshook: function(server, tile, req, res, result, callback) {
 				var dur = Date.now() - tile._timeStart;
 				var tags = [
